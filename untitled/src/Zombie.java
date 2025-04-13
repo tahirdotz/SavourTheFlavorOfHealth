@@ -1,0 +1,5 @@
+enum Zombie
+{
+    NOOB,
+    PRO
+}
