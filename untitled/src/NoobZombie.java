@@ -11,7 +11,7 @@ class NoobZombie implements HireableZombie {
 
     @Override
     public double getAccuracy() {
-        return 0.6; 
+        return 0.6;
     }
 
     @Override

@@ -12,7 +12,7 @@ class Player {
         this.money = money;
         this.points = 0;
         this.remainingTurns = remainingTurns;
-        this.targetPoints = 300; 
+        this.targetPoints = 300;
     }
 
     public String getName() {

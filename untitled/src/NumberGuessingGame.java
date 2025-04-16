@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class NumberGuessingGame implements MiniGame {
+public class NumberGuessingGame implements MiniGames {
     private final Random random = new Random();
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 100;

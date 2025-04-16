@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class ZombieFactory {
+class ZombieFactory {
+    public HireableZombie createZombie(Zombie type) {
+        return (type == Zombie.NOOB) ? new NoobZombie() : new ProZombie();
+    }
 }

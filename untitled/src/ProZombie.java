@@ -11,7 +11,7 @@ class ProZombie implements HireableZombie {
 
     @Override
     public double getAccuracy() {
-        return 0.9; 
+        return 0.9;
     }
 
     @Override

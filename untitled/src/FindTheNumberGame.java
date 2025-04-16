@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class FindTheNumberGame implements MiniGames {
     private static final int MIN_DIGITS = 6;
     private static final int MAX_DIGITS = 8;
-    private static final int DISPLAY_TIME_MS = 500; // 0.5 seconds
+    private static final int DISPLAY_TIME_MS = 2500;
     private static final int MAX_ATTEMPTS = 3;
 
     public FindTheNumberGame(Timer timer) {
@@ -15,11 +15,10 @@ public class FindTheNumberGame implements MiniGames {
         System.out.println("Memorize the number that will appear briefly!");
         System.out.println("You'll have " + MAX_ATTEMPTS + " attempts to guess it correctly.");
 
-
         int digitCount = MIN_DIGITS + (int)(Math.random() * (MAX_DIGITS - MIN_DIGITS + 1));
-        double minNumber =  Math.pow(10, digitCount - 1);
-        double maxNumber =  Math.pow(10, digitCount) - 1;
-        double targetNumber = minNumber +(Math.random() * (maxNumber - minNumber + 1));
+        int minNumber = (int) Math.pow(10, digitCount - 1);
+        int maxNumber = (int) Math.pow(10, digitCount) - 1;
+        int targetNumber = minNumber + (int)(Math.random() * (maxNumber - minNumber + 1));
 
         System.out.println("The number will appear for 0.5 seconds...");
         System.out.println("Ready? Press Enter to continue!");
@@ -32,7 +31,7 @@ public class FindTheNumberGame implements MiniGames {
             e.printStackTrace();
         }
 
-        TerminalUtilForGuessTheNumber.clearTerminal();
+        TerminalUtil.clearTerminal();
 
         System.out.println("What was the number?");
         System.out.println("(It was a " + digitCount + "-digit number)");

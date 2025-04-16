@@ -21,7 +21,7 @@ public class NavigationManager {
             boolean accurateDirection = random.nextDouble() <= accuracy;
             String correctDirection = directions[random.nextInt(directions.length)];
 
-            if (accuracy < 0.5) {
+            if (accuracy < 0.6) {
                 String wrongDirection;
                 do {
                     wrongDirection = directions[random.nextInt(directions.length)];

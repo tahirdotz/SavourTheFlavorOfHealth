@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class TerminalUtilForGuessTheNumber {
+public class TerminalUtil {
 
     public static void clearTerminal() {
         try {

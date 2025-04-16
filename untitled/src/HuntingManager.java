@@ -78,7 +78,7 @@ public class HuntingManager {
         System.out.println("\n--- ENGAGING PREY ---");
         System.out.println("To consume the " + prey.getName() + ", you must win a mini-game!");
 
-        MiniGame game = miniGameFactory.createRandomMiniGame();
+        MiniGames game = miniGameFactory.createRandomMiniGame();
         int score = game.play(scanner);
 
         System.out.println("Your score: " + score);
